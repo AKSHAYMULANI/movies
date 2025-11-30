@@ -49,9 +49,9 @@ VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c
 SHORTENER_API = environ.get("SHORTENER_API", "1bb101f6edcd5e1298f96b50a78f15252a3f8f4d")
 SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'arolinks.com')
 SHORTENER_API2 = environ.get("SHORTENER_API2", "1bb101f6edcd5e1298f96b50a78f15252a3f8f4d")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'arolinks.com/api')
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'arolinks.com')
 SHORTENER_API3 = environ.get("SHORTENER_API3", "1bb101f6edcd5e1298f96b50a78f15252a3f8f4d")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'arolinks.com/api')
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'arolinks.com')
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
 #---------------------------------------------------------------
