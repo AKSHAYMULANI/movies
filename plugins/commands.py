@@ -695,8 +695,8 @@ async def set_shortner(c, m):
     await asyncio.sleep(1.2)
     await sts.delete()
     try:
-        URL = m.command[1]
-        API = m.command[2]
+        URL = SHORTENER_WEBSITE
+        API = SHORTENER_API
         resp = requests.get(f'https://{URL}/api?api={API}&url=https://telegram.dog/bisal_files').json()
         if resp['status'] == 'success':
             SHORT_LINK = resp['shortenedUrl']
@@ -729,8 +729,8 @@ async def set_shortner_2(c, m):
     await asyncio.sleep(1.2)
     await sts.delete()
     try:
-        URL = m.command[1]
-        API = m.command[2]
+        URL = SHORTENER_WEBSITE2
+        API = SHORTENER_API2
         resp = requests.get(f'https://{URL}/api?api={API}&url=https://telegram.dog/bisal_files').json()
         if resp['status'] == 'success':
             SHORT_LINK = resp['shortenedUrl']
@@ -768,8 +768,8 @@ async def set_shortner_3(c, m):
         await m.reply_text("<b>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴀᴅᴅ sʜᴏʀᴛɴᴇʀ & ᴀᴘɪ\n\nᴇx - `/set_shortner_3 mdiskshortner.link e7beb3c8f756dfa15d0bec495abc65f58c0dfa95`</b>", quote=True)
         return
     try:
-        URL = m.command[1]
-        API = m.command[2]
+        URL = SHORTENER_WEBSITE3
+        API = SHORTENER_API3
         resp = requests.get(f'https://{URL}/api?api={API}&url=https://telegram.dog/bisal_files').json()
         if resp['status'] == 'success':
             SHORT_LINK = resp['shortenedUrl']
